@@ -3,62 +3,47 @@ import { ProjectCard } from "@/components/ProjectCard";
 import { ProjectModal, Project } from "@/components/ProjectModal";
 import { BookOpen, Music, Rocket, GraduationCap, BookMarked, Award } from "lucide-react";
 import profilePhoto from "@/assets/dmitry-photo.jpeg";
-
-const projects: Project[] = [
-  {
-    id: "education",
-    title: "Обучение",
-    description: "Образовательные программы и курсы по проектному управлению и новым технологиям",
-    icon: <GraduationCap className="w-8 h-8" />,
-    links: [
-      {
-        title: "ProAgile - Проектное управление",
-        url: "https://stepik.org/course/216930/syllabus",
-        description: "Курс на Stepik по гибкому проектному управлению",
-      },
-      {
-        title: "Видеолекции ProAgile",
-        url: "https://rutube.ru/channel/31733767/",
-        description: "Видеоматериалы и лекции на RuTube",
-      },
-      {
-        title: "Книга про ИИ",
-        url: "#",
-        description: "Скоро",
-      },
-      {
-        title: "MBA CIO",
-        url: "#",
-        description: "Скоро",
-      },
-    ],
-  },
-  {
-    id: "music",
-    title: "Музыка",
-    description: "Творческие проекты и музыкальные релизы",
-    icon: <Music className="w-8 h-8" />,
-    links: [
-      {
-        title: "Leadlace",
-        url: "https://band.link/hrrJ7",
-        description: "Музыкальный проект - слушайте на всех площадках",
-      },
-    ],
-  },
-];
-
+const projects: Project[] = [{
+  id: "education",
+  title: "Обучение",
+  description: "Образовательные программы и курсы по проектному управлению и новым технологиям",
+  icon: <GraduationCap className="w-8 h-8" />,
+  links: [{
+    title: "ProAgile - Проектное управление",
+    url: "https://stepik.org/course/216930/syllabus",
+    description: "Курс на Stepik по гибкому проектному управлению"
+  }, {
+    title: "Видеолекции ProAgile",
+    url: "https://rutube.ru/channel/31733767/",
+    description: "Видеоматериалы и лекции на RuTube"
+  }, {
+    title: "Книга про ИИ",
+    url: "#",
+    description: "Скоро"
+  }, {
+    title: "MBA CIO",
+    url: "#",
+    description: "Скоро"
+  }]
+}, {
+  id: "music",
+  title: "Музыка",
+  description: "Творческие проекты и музыкальные релизы",
+  icon: <Music className="w-8 h-8" />,
+  links: [{
+    title: "Leadlace",
+    url: "https://band.link/hrrJ7",
+    description: "Музыкальный проект - слушайте на всех площадках"
+  }]
+}];
 const Index = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [modalOpen, setModalOpen] = useState(false);
-
   const handleProjectClick = (project: Project) => {
     setSelectedProject(project);
     setModalOpen(true);
   };
-
-  return (
-    <div className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden">
+  return <div className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse" />
@@ -71,11 +56,7 @@ const Index = () => {
           <div className="flex justify-center mb-8 animate-float">
             <div className="relative">
               <div className="absolute inset-0 rounded-full bg-accent/20 blur-xl animate-glow" />
-              <img
-                src={profilePhoto}
-                alt="Дмитрий Мячин"
-                className="relative w-40 h-40 rounded-full object-cover border-4 border-accent/50 shadow-glow"
-              />
+              <img src={profilePhoto} alt="Дмитрий Мячин" className="relative w-40 h-40 rounded-full object-cover border-4 border-accent/50 shadow-glow" />
             </div>
           </div>
 
@@ -85,39 +66,19 @@ const Index = () => {
           </h1>
 
           {/* Bio */}
-          <p className="text-center text-muted-foreground text-lg mb-8 leading-relaxed">
-            Эксперт по проектному управлению, преподаватель, музыкант. 
-            Создаю образовательные программы и делюсь знаниями в области управления проектами и цифровой трансформации.
-          </p>
+          <p className="text-center text-muted-foreground text-lg mb-8 leading-relaxed">MBA CIO, ИИ-евангелист, эксперт по проектному управлению, преподаватель, музыкант. Создаю образовательные программы и делюсь знаниями в области управления проектами и цифровой трансформации.</p>
 
           {/* Projects */}
           <div className="space-y-4">
-            {projects.map((project) => (
-              <ProjectCard
-                key={project.id}
-                title={project.title}
-                icon={project.icon}
-                onClick={() => handleProjectClick(project)}
-              />
-            ))}
+            {projects.map(project => <ProjectCard key={project.id} title={project.title} icon={project.icon} onClick={() => handleProjectClick(project)} />)}
             
-            <ProjectCard
-              title="R-Sups"
-              icon={<Rocket className="w-8 h-8" />}
-              onClick={() => {}}
-              comingSoon
-            />
+            <ProjectCard title="R-Sups" icon={<Rocket className="w-8 h-8" />} onClick={() => {}} comingSoon />
           </div>
 
           {/* Footer */}
           <div className="mt-8 pt-6 border-t border-border text-center">
             <p className="text-muted-foreground text-sm">
-              <a 
-                href="https://miachin.pro" 
-                className="text-accent hover:underline transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://miachin.pro" className="text-accent hover:underline transition-colors" target="_blank" rel="noopener noreferrer">
                 miachin.pro
               </a>
             </p>
@@ -125,13 +86,7 @@ const Index = () => {
         </div>
       </div>
 
-      <ProjectModal
-        project={selectedProject}
-        open={modalOpen}
-        onOpenChange={setModalOpen}
-      />
-    </div>
-  );
+      <ProjectModal project={selectedProject} open={modalOpen} onOpenChange={setModalOpen} />
+    </div>;
 };
-
 export default Index;
