@@ -52,7 +52,7 @@ const Index = () => {
           <div className="flex justify-center mb-8 animate-float">
             <div className="relative">
               <div className="absolute inset-0 rounded-full bg-accent/20 blur-xl animate-glow" />
-              <img src={profilePhoto} alt="Дмитрий Мячин" className="relative w-40 h-40 rounded-full object-cover border-4 border-accent/50 shadow-glow" />
+              <img src={profilePhoto} alt="Дмитрий Мячин" className="relative w-40 h-40 rounded-full object-cover border-4 border-white shadow-glow" />
             </div>
           </div>
 
