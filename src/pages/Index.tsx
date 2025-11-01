@@ -26,7 +26,7 @@ const projects: Project[] = [{
   links: [{
     title: "Leadlace",
     url: "https://band.link/hrrJ7",
-    description: "Музыкальный проект - слушайте на всех площадках"
+    description: "Музыкальный проект - рок-группа Leadlace"
   }]
 }];
 const Index = () => {
