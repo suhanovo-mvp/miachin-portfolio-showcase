@@ -17,6 +17,10 @@ const projects: Project[] = [{
     title: "Видеолекции ProAgile",
     url: "https://rutube.ru/channel/31733767/",
     description: "Видеоматериалы и лекции на RuTube"
+  }, {
+    title: "Тренажер по планированию спринтов",
+    url: "https://sprintsimu-owysmbez.manus.space",
+    description: "Авторский тренажер по планированию спринтов"
   }]
 }, {
   id: "music",
