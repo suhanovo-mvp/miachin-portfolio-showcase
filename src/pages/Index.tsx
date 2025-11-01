@@ -16,14 +16,6 @@ const projects: Project[] = [{
     title: "Видеолекции ProAgile",
     url: "https://rutube.ru/channel/31733767/",
     description: "Видеоматериалы и лекции на RuTube"
-  }, {
-    title: "Книга про ИИ",
-    url: "#",
-    description: "Скоро"
-  }, {
-    title: "MBA CIO",
-    url: "#",
-    description: "Скоро"
   }]
 }, {
   id: "music",
@@ -72,6 +64,8 @@ const Index = () => {
           <div className="space-y-4">
             {projects.map(project => <ProjectCard key={project.id} title={project.title} icon={project.icon} onClick={() => handleProjectClick(project)} />)}
             
+            <ProjectCard title="Книга про ИИ" icon={<BookMarked className="w-8 h-8" />} onClick={() => {}} comingSoon />
+            <ProjectCard title="MBA CIO" icon={<Award className="w-8 h-8" />} onClick={() => {}} comingSoon />
             <ProjectCard title="R-Sups" icon={<Rocket className="w-8 h-8" />} onClick={() => {}} comingSoon />
           </div>
 
