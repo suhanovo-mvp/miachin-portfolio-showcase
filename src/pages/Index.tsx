@@ -7,7 +7,7 @@ import profilePhoto from "@/assets/dmitry-photo.jpeg";
 const projects: Project[] = [{
   id: "education",
   title: "Обучение",
-  description: "Образовательные программы и курсы по проектному управлению и новым технологиям",
+  description: "Авторские образовательные программы и курсы по проектному управлению и новым технологиям",
   icon: <GraduationCap className="w-8 h-8" />,
   links: [{
     title: "ProAgile - Проектное управление",
