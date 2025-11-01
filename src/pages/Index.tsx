@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ProjectCard } from "@/components/ProjectCard";
 import { ProjectModal, Project } from "@/components/ProjectModal";
+import { MatrixRain } from "@/components/MatrixRain";
 import { BookOpen, Music, Rocket, GraduationCap, BookMarked, Award } from "lucide-react";
 import profilePhoto from "@/assets/dmitry-photo.jpeg";
 const projects: Project[] = [{
@@ -36,13 +37,16 @@ const Index = () => {
     setModalOpen(true);
   };
   return <div className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden">
+      {/* Matrix Rain Effect */}
+      <MatrixRain />
+      
       {/* Animated background elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none z-[1]">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse delay-1000" />
       </div>
 
-      <div className="w-full max-w-2xl relative z-10">
+      <div className="w-full max-w-2xl relative z-[2]">
         <div className="bg-card/40 backdrop-blur-xl rounded-3xl p-8 md:p-12 border border-border shadow-2xl">
           {/* Profile Photo */}
           <div className="flex justify-center mb-8 animate-float">
