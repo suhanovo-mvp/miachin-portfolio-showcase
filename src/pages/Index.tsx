@@ -40,7 +40,7 @@ const Index = () => {
     setSelectedProject(project);
     setModalOpen(true);
   };
-  return <div className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden">
+  return <div className="min-h-screen flex items-center justify-center p-2 md:p-4 relative overflow-hidden">
       {/* Matrix Rain Effect */}
       <MatrixRain />
       
@@ -51,7 +51,7 @@ const Index = () => {
       </div>
 
       <div className="w-full max-w-2xl relative z-[2]">
-        <div className="bg-card/40 backdrop-blur-xl rounded-3xl p-8 md:p-12 border border-border shadow-2xl">
+        <div className="bg-card/40 backdrop-blur-xl rounded-3xl p-4 md:p-12 border border-border shadow-2xl">
           {/* Profile Photo */}
           <div className="flex justify-center mb-8 animate-float">
             <div className="relative">
