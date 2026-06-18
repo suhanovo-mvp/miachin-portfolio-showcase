@@ -66,7 +66,7 @@ const Index = () => {
           </h1>
 
           {/* Bio */}
-          <p className="text-center text-muted-foreground text-lg mb-8 leading-relaxed">MBA CIO, ИИ-евангелист, эксперт по проектному управлению, преподаватель, музыкант. Создаю образовательные программы и делюсь знаниями в области управления проектами и цифровой трансформации.</p>
+          <p className="text-center text-muted-foreground text-lg mb-8 leading-relaxed">MBA CIO, ИИ-волшебник, эксперт по проектному управлению, преподаватель, музыкант. Создаю образовательные программы и делюсь знаниями в области управления проектами и цифровой трансформации.</p>
 
           {/* Projects */}
           <div className="space-y-4">
