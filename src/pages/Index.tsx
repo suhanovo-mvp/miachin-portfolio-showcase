@@ -28,6 +28,14 @@ const projects: Project[] = [{
   description: "Творческие проекты и музыкальные релизы",
   icon: <Music className="w-8 h-8" />,
   links: [{
+    title: "Рекордсмены",
+    url: "https://music.yandex.ru/artist/25920519",
+    description: "Музыкальный проект Рекордсмены на Яндекс Музыке"
+  }, {
+    title: "Myacho",
+    url: "https://music.yandex.ru/artist/25331515",
+    description: "Музыкальный проект Myacho на Яндекс Музыке"
+  }, {
     title: "Leadlace",
     url: "https://band.link/hrrJ7",
     description: "Музыкальный проект - рок-группа Leadlace"
