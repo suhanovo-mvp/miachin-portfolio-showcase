@@ -66,15 +66,11 @@ const Index = () => {
           </h1>
 
           {/* Bio */}
-          <p className="text-center text-muted-foreground text-lg mb-8 leading-relaxed">MBA CIO, ИИ-волшебник, эксперт по проектному управлению, преподаватель, музыкант. Создаю образовательные программы и делюсь знаниями в области управления проектами и цифровой трансформации.</p>
+          <p className="text-center text-muted-foreground text-lg mb-8 leading-relaxed">ИИ-волшебник, эксперт по проектному управлению, преподаватель, музыкант. Создаю образовательные программы и делюсь знаниями в области управления проектами и цифровой трансформации.</p>
 
           {/* Projects */}
           <div className="space-y-4">
             {projects.map(project => <ProjectCard key={project.id} title={project.title} icon={project.icon} onClick={() => handleProjectClick(project)} />)}
-            
-            <ProjectCard title="Книга про ИИ" icon={<BookMarked className="w-8 h-8" />} onClick={() => {}} comingSoon />
-            <ProjectCard title="MBA CIO" icon={<Award className="w-8 h-8" />} onClick={() => {}} comingSoon />
-            <ProjectCard title="R-Sups" icon={<Rocket className="w-8 h-8" />} onClick={() => {}} comingSoon />
           </div>
 
           {/* Footer */}
